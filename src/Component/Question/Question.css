@@ -1,0 +1,14 @@
+.question{
+    background-color: bisque;
+}
+
+.answer{
+    display: flex;
+    background-color: aqua;
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+
+.answer p{
+    width: 40%;
+}

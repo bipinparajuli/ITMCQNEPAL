@@ -9,27 +9,53 @@ const Navbar = () => {
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <a class="navbar-brand" href="#">ITMCQNEPAL</a>
+    
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    
     <li class="nav-item dropdown">
+       
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           bca
         </a>
+       
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item dropdown-toggle" href="#"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              
-              BCA</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              
-              1st</a>
+          
+              <a class="dropdown-item dropdown-toggle" href="#"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    
+                  1st sem
+              </a>
+          
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
 
+              <a class="dropdown-item" href="#">C</a>
+              <a class="dropdown-item" href="#">Math</a>
+              <a class="dropdown-item" href="#">Digital Logic</a>
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Socialogy</a>
+        
+      </div>
 
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+                <a class="dropdown-item dropdown-toggle" href="#"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  2nd
+                </a>
+                      
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
 
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+<a class="dropdown-item" href="#">Java</a>
+<a class="dropdown-item" href="#">888</a>
+<a class="dropdown-item" href="#">***</a>
+<a class="dropdown-item" href="#">***</a>
+<a class="dropdown-item" href="#">***</a>
+
+</div>
+                
+                
+                <a class="dropdown-item" href="#">3rd</a>
+                <a class="dropdown-item" href="#">4th</a>
+                <a class="dropdown-item" href="#">5th</a>
+                <a class="dropdown-item" href="#">6th</a>
+                <a class="dropdown-item" href="#">7th</a>
+                <a class="dropdown-item" href="#">8th</a>
+
         </div>
       </li>
       <li class="nav-item">
@@ -42,6 +68,8 @@ const Navbar = () => {
     
   </div>
 </nav>
+
+
         </div>
     )
 }
