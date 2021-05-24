@@ -1,25 +1,24 @@
 import React from 'react'
-import {TextField,Button,Select} from '@material-ui/core'
+import {TextField,Button,MenuItem} from '@material-ui/core'
 
 const Admin = () => {
+
     return (
-        <div style={{width:"100%",height:"100vh",display:"flex",flexDirection:"column",justifyContent:'center',alignItems:"center"}}>
-  <TextField id="outlined-basic" label="Question" variant="outlined" />
+        <div style={{width:"100%",height:"100vh",display:"flex",flexDirection:"column",justifyContent:'start',alignItems:"center"}}>
+  <TextField id="outlined-basic" label="Question" variant="outlined" /><br />
+  <TextField id="outlined-basic" label="Answer A" variant="outlined" /><br />
+  <TextField id="outlined-basic" label="Answer B" variant="outlined" /><br />
+  <TextField id="outlined-basic" label="Answer C" variant="outlined" /><br />
+  <TextField id="outlined-basic" label="Answer D" variant="outlined" /><br />
 
-  <TextField id="outlined-basic" label="Answer A" variant="outlined" />
-  <TextField id="outlined-basic" label="Answer B" variant="outlined" />
-  <TextField id="outlined-basic" label="Answer C" variant="outlined" />
-  <TextField id="outlined-basic" label="Answer D" variant="outlined" />
 
+  <select>
+    <option>Select</option>
+    <option>Yes</option>
+    <option>No</option>
 
-  <TextField id="outlined-basic" label="Category" variant="outlined" />
-
-<Select>
-    <option value="true">yes</option>
-    <option value="false">No</option>
-
-</Select>
-
+    </select>
+    <br />
 
   <Button variant="contained" color="primary">
   Submit

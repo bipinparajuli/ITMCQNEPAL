@@ -1,12 +1,12 @@
 //get all question
 export const getAllQuestion = (subject)=> {
 
- return fetch(`http://locahost:8000/getquestion/${subject}`)
+ return fetch(`http://localhost:8000/api/getquestion/${subject}`)
     .then(data=>{
         return data.json()
     })
     .catch(err=>{
-       return err.json()
+       return err;
     })
 
 }
