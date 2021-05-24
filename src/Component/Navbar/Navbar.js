@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const Navbar = () => {
     return (
         <div>
@@ -26,17 +26,17 @@ const Navbar = () => {
           
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
 
-              <a class="dropdown-item" href="#">C</a>
-              <a class="dropdown-item" href="#">Math</a>
-              <a class="dropdown-item" href="#">Digital Logic</a>
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">Socialogy</a>
+              <Link class="dropdown-item" to="/question/C">C</Link>
+              <Link class="dropdown-item" to="/question/math">Math</Link>
+              <Link class="dropdown-item" to="/question/digitallogic">Digital Logic</Link>
+              <Link class="dropdown-item" to="/question/english">English</Link>
+              <Link class="dropdown-item" to="/question/socialogy">Socialogy</Link>
         
       </div>
 
-                <a class="dropdown-item dropdown-toggle" href="#"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <Link class="dropdown-item dropdown-toggle" to=""  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   2nd
-                </a>
+                </Link>
                       
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
 

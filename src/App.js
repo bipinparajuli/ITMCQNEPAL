@@ -10,11 +10,12 @@ import Error from './Error'
 function App() {
   return (
     <div className="App">
-<Navbar />
 <BrowserRouter>
+<Navbar />
+
 <Switch>
   <Route path="/" exact component={Home} />
-  <Route path="/c" exact component={C} />
+  <Route path="/question/:subject" exact component={C} />
   <Route path="/admin" exact component={Admin} />
   <Route  component={Error} />
 </Switch>
