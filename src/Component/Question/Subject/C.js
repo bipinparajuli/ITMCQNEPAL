@@ -23,7 +23,9 @@ preload(match.params.subject);
     return (
         <div>
 {
-   questions.length<=0 ?<div className="preload">
+   questions.length<=0 ?
+   <>
+   <div className="preload">
        <div className="preload_question"></div>
        <div className="preload_answer">
         <div></div>
@@ -32,6 +34,33 @@ preload(match.params.subject);
        <div></div>
        </div>
    </div>
+   <div className="preload">
+       <div className="preload_question"></div>
+       <div className="preload_answer">
+        <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       </div>
+   </div>
+   <div className="preload">
+       <div className="preload_question"></div>
+       <div className="preload_answer">
+        <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       </div>
+   </div><div className="preload">
+       <div className="preload_question"></div>
+       <div className="preload_answer">
+        <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       </div>
+   </div>
+   </>
 :   questions.map(question=>{
         return(
             <Question
@@ -40,8 +69,8 @@ preload(match.params.subject);
               option2={question.alternatives.answerB}
                option3={question.alternatives.answerC}
                option4={question.alternatives.answerD}
-
-                correct="denich rechi" />
+correct={question.alternatives}
+                 />
         )
     })
 }

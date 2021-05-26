@@ -5,11 +5,15 @@ import Home from './Component/Langing/Landing'
 import C from './Component/Question/Subject/C'
 import Admin from './Component/Admin/Admin'
 import Error from './Error'
-
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 function App() {
   return (
     <div className="App">
+<ToastContainer />
+    
 <BrowserRouter>
 <Navbar />
 
