@@ -1,15 +1,21 @@
 import React,{useEffect,useState} from 'react'
 import Question from '../Question'
 import {getAllQuestion} from '../../../ApiHelper/quizapi'
+import {useHistory,Redirect} from 'react-router-dom'
 
 const C = ({match}) => {
 
     const [questions, setquestion] = useState([])
 
+    const history = useHistory()
 
     const preload = (subject)=> {
 getAllQuestion(subject)
 .then(data=>{
+    if(data.data === undefined)
+    {
+          return  history.push("/")
+    }
     console.log(data.data);
     setquestion(data.data)
 }).catch(er=>console.log(er))
@@ -23,7 +29,7 @@ preload(match.params.subject);
     return (
         <div>
 {
-   questions.length<=0 ?
+  questions === undefined ||questions.length <=0 ?
    <>
    <div className="preload">
        <div className="preload_question"></div>
